@@ -17,3 +17,21 @@
 .alert {
   color: red;
 }
+
+.image-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .picture {
+    margin: 4px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .image {
+    border: solid;
+  }
+}

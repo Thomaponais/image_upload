@@ -1,1 +1,16 @@
 <h1>写真一覧</h1>
+
+<%= link_to "写真を新規にアップロード", new_picture_path %>
+
+<div class="image-container">
+  <% @pictures.each do |picture| %>
+    <div class="picture">
+      <div class="title">
+        <%= picture.title %>
+      </div>
+      <div class="image">
+        <%= image_tag picture.image, size: '150x150' %>
+      </div>
+    </div>
+  <% end %>
+</div>

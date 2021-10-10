@@ -18,4 +18,8 @@ class ApplicationController < ActionController::Base
       @current_user = nil
     end
   end
+
+  def require_logged_in!
+    redirect_to sign_in_path if current_user.nil?
+  end
 end
