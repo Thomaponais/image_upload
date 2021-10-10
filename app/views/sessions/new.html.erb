@@ -1,0 +1,14 @@
+<h1>ログイン</h1>
+  <%= form_with url: sign_in_path do |f| %>
+    <p>
+    <%= f.label 'ユーザーID'%><br>
+    <%= f.text_field :username %>
+    </p>
+    <p>
+    <%= f.label 'password:'%><br>
+    <%= f.password_field :password %>
+    </p>
+    <p>
+    <%= f.submit 'ログインする' %>
+    </p>
+  <% end %>

@@ -11,6 +11,17 @@
   </head>
 
   <body>
+    <% if current_user.present?%>
+      <%= link_to "ログアウト", logout_path, method: :delete %>
+    <% end %>
+    <% flash.each do |type, messages| %>
+      <ul>
+        <% messages.each do |text| %>
+
+          <li class="<%= type %>"><%= text %></li>
+        <% end %>
+      </ul>
+    <% end %>
     <%= yield %>
   </body>
 </html>
