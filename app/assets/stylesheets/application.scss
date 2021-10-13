@@ -18,6 +18,10 @@
   color: red;
 }
 
+.notice {
+  color: green;
+}
+
 .image-container {
   margin-top: 20px;
   display: flex;
@@ -25,13 +29,15 @@
 
   .picture {
     margin: 4px;
+    text-align: center;
   }
 
   .title {
-    text-align: center;
+    margin-bottom: 5px;
   }
 
   .image {
     border: solid;
+    margin-bottom: 5px;
   }
 }

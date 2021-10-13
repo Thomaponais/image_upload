@@ -1,5 +1,13 @@
 <h1>写真一覧</h1>
 
+<p>
+  <% if session[:access_token].blank? %>
+    <%= link_to "My Tweet Appと連帯" , "https://arcane-ravine-29792.herokuapp.com/oauth/authorize?client_id=#{Rails.application.credentials.tweet_appli[:client_id]}&client_secret=#{Rails.application.credentials.tweet_appli[:client_secret]}&redirect_uri=#{Rails.application.credentials.tweet_appli[:redirect_uri]}&response_type=code"%>
+  <% else %>
+    My Tweet Appと連帯中
+  <% end %>
+</p>
+
 <%= link_to "写真を新規にアップロード", new_picture_path %>
 
 <div class="image-container">
