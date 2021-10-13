@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Build procedure
 
-Things you may want to cover:
+``` sh
+bundle
+rails db:create db:migrate db:seed
+rails webpacker:install
+rails webpacker:compile
+rails s
+```
 
-* Ruby version
+## Login
+id: Thomas
+password: password
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+かかった時間：〜３時間
