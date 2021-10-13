@@ -19,6 +19,7 @@
       <div class="image">
         <%= image_tag picture.image, size: '150x150' %>
       </div>
+      <%= button_to "ツイートする", tweets_path(params: { picture_id: picture.id })  %>
     </div>
   <% end %>
 </div>

@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   resources :pictures, only: [:index , :new, :create]
 
+  get 'oauth/callback', to: 'api/callback#index'
+  post 'tweets', to: 'api/tweets#create'
 end
